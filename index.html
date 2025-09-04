@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Interactive Page</h1>
+        <nav>
+            <a href="#form-section">Form</a> |
+            <a href="#counter-section">Counter</a> |
+            <a href="#toggle-section">Dark Mode</a>
+        </nav>
+    </header>
+
+    <!-- Form Section -->
+    <section id="form-section">
+        <h2>Signup Form</h2>
+        <form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password"><br><br>
+
+            <button type="submit">Submit</button>
+            <p id="formMessage"></p>
+        </form>
+    </section>
+
+    <!-- Counter Section -->
+    <section id="counter-section">
+        <h2>Interactive Counter</h2>
+        <p>Click the buttons to change the counter:</p>
+        <button id="decreaseBtn">➖ Decrease</button>
+        <span id="counter">0</span>
+        <button id="increaseBtn">➕ Increase</button>
+    </section>
+
+    <!-- Dark Mode Section -->
+    <section id="toggle-section">
+        <h2>Dark Mode Toggle</h2>
+        <button id="toggleBtn">Switch to Dark Mode</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
